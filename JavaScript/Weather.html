@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+</head>
+<body>
+<script>
+let weather = prompt("Enter weather (Sunny/Rainy)");
+if (weather == "Sunny") {
+
+    let temp = prompt("Enter temperature");
+
+    if (temp > 30) {
+        document.write("Wear sunscreen");
+    } else {
+        document.write("Enjoy the day");
+    }
+
+}
+else if (weather == "Rainy") {
+    document.write("Take an umbrella");
+}
+</script>
+</body>
+</html>

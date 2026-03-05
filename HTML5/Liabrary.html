@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+</head>
+<body>
+
+    <!-- Headings -->
+    <h1>Library Management System</h1>
+    <h2>Welcome to College Library</h2>
+
+    <!-- Paragraph -->
+    <p>
+        This library management system helps students to view available books
+        and apply for library membership. The library provides academic and
+        reference books for various courses.
+    </p>
+
+    <!-- List of Books -->
+    <h3>Available Books</h3>
+    <ul>
+        <li>Introduction to Programming</li>
+        <li>Database Management Systems</li>
+        <li>Operating Systems</li>
+        <li>Computer Networks</li>
+        <li>Web Technologies</li>
+    </ul>
+
+    <!-- Membership Form -->
+    <h3>Library Membership Form</h3>
+    <form>
+        Member Name: <input type="text"><br><br>
+        Student ID: <input type="text"><br><br>
+        Email ID: <input type="email"><br><br>
+        Mobile Number: <input type="text"><br><br>
+
+        Membership Type:
+        <input type="radio" name="member"> Student
+        <input type="radio" name="member"> Staff
+        <br><br>
+
+        Course:
+        <select>
+            <option>MCA</option>
+            <option>MBA</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+
+    <!-- Book Details Table -->
+    <h3>Book Details</h3>
+    <table border="1">
+        <tr>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Introduction to Programming</td>
+            <td>Herbert Schildt</td>
+            <td>Programming</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Database Management Systems</td>
+            <td>Raghu Ramakrishnan</td>
+            <td>Database</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Operating Systems</td>
+            <td>Silberschatz</td>
+            <td>Systems</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Computer Networks</td>
+            <td>Andrew S. Tanenbaum</td>
+            <td>Networking</td>
+        </tr>
+    </table>
+
+</body>
+</html>

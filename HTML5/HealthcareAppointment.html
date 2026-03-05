@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Appointment</title>
+</head>
+<body>
+    <center><h1>Healthcare Appointment System</h1></center><hr>
+    <p>Welcome to our Healthcare Appointment Booking system.You can easily able to schedule an appointment across various departments by filling the below form. Your appointment is booked.</p>
+    <!--Deparment list start-->
+    <h2>Departments</h2>
+    <ul>
+        <li>Neurology.</li>
+        <li>Cardiology.</li>
+        <li>Pediatrics.</li>
+        <li>Emergency Department.</li>
+        <li>Deprmatology.</li>
+        <li>Psychiatry.</li>
+        <li>Gynecology.</li>
+    </ul>
+      <!--Deparment list end-->
+
+    <!--Appointment Booking form started-->
+<h2>Book an Appointment.</h2>
+<form action="">
+    <label for="name">Name: </label>
+    <input type="text" id="name"><br><br>
+    <label for="age">Age: </label>
+    <input type="number" id="age"><br><br>
+    <label for="">Department: </label>
+    <select id="department" name="department" required> 
+        <option value="neurology">Neurology</option> 
+        <option value="cardiology">Cardiology</option> 
+        <option value="Pediatrics">Pediatrics</option> 
+        <option value="emergency department">Emergency Department</option> 
+        <option value="dermatology">Dermatology</option> 
+        <option value="psychiatry">Psychiatry</option>
+        <option value="gynecology">Gynecology</option> 
+    </select><br><br>
+    <label for="">Date :</label>
+    <input type="date"><br><br>
+    <label for="">Time :</label>
+    <input type="time"><br><br>
+    <label for="">Gender :</label>
+    <input type="radio" name="gender">
+    <label for="">Male</label>
+    <input type="radio" name="gender">
+    <label for="">Female</label><br><br>
+    <button>Submit</button>
+</form>
+<!--Appointment booking form end-->
+
+<!--Doctors Availability table started..-->
+<h2>Availability Table</h2>
+<table border="1px">
+    <tr>
+        <th>Doctor Id</th>
+        <th>Doctor Name</th>
+        <th>Department</th>
+        <th>Available Date</th>
+    </tr>
+    <tr>
+        <td>doc101</td>
+        <td>Dr. Gajanan Patil</td>
+        <td>Cardiology</td>
+        <td>10 Feb,12 Feb</td>
+    </tr>
+      <tr>
+        <td>doc205</td>
+        <td>Dr. Arun Shaha</td>
+        <td>Neurology</td>
+        <td>10 Feb,12 Feb</td>
+    </tr>
+      <tr>
+        <td>doc711</td>
+        <td>Dr. Ankit Magdum</td>
+        <td>Dermatology</td>
+        <td>10 Feb,12 Feb</td>
+    </tr>
+      <tr>
+        <td>doc274</td>
+        <td>Dr. Uttam Patil</td>
+        <td>Gynecology</td>
+        <td>10 Feb,12 Feb</td>
+    </tr>
+</table>
+<!--Doctors Availability table end-->
+</body>
+</html>

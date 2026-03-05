@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Destination Gallery 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .caption {
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        /* Tablet View */
+        @media (max-width: 992px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Top Travel Destinations 2026</h1>
+    <div class="gallery">
+        <div>
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&w=800" alt="Paris">
+            <div class="caption">Paris, France</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&w=800" alt="Tokyo">
+            <div class="caption">Tokyo, Japan</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&w=800" alt="Maldives">
+            <div class="caption">Maldives</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&w=800" alt="Dubai">
+            <div class="caption">Dubai, UAE</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&w=800" alt="Rome">
+            <div class="caption">Rome, Italy</div>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&w=800" alt="Bali">
+            <div class="caption">Bali, Indonesia</div>
+        </div>
+
+        <div>
+            <img src="https://images.pexels.com/photos/33413148/pexels-photo-33413148.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Singapore Nature">
+            <div class="caption">Singapore</div>
+        </div>
+
+        <div>
+            <img src="https://c.pxhere.com/photos/a3/6f/freedom_statue_of_liberty_landmark_travel_city_usa_symbol_monument-798106.jpg!d"
+                alt="Historic Statue of Liberty, New York">
+            <div class="caption">New York</div>
+        </div>
+    </div>
+</body>
+</html>

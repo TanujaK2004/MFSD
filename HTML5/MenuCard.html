@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Restaurant Digital Menu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .menu-container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 4vw, 3rem);
+        }
+        /* Responsive Image */
+        .menu-image {
+            width: 100%;
+            height: clamp(200px, 40vw, 350px);
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        dl {
+            margin-bottom: 25px;
+        }
+        dt {
+            font-weight: bold;
+            font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+            margin-top: 15px;
+            color: #333;
+        }
+        dd {
+            margin-left: 15px;
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: #555;
+            margin-bottom: 8px;
+        }
+        .price {
+            float: right;
+            color: #e67e22;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="menu-container">
+    <h1>Delicious Bites Restaurant</h1>
+    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&w=1000" 
+         alt="Restaurant Food" 
+         class="menu-image">
+
+    <dl>
+        <dt>Margherita Pizza <span class="price">Rs.600</span></dt>
+        <dd>Classic Italian pizza with fresh tomatoes, mozzarella cheese, and basil.</dd>
+        <dt>Grilled Chicken Steak <span class="price">Rs.900</span></dt>
+        <dd>Juicy grilled chicken served with sautéed vegetables and garlic sauce.</dd>
+        <dt>Pasta Alfredo <span class="price">Rs.450</span></dt>
+        <dd>Creamy Alfredo sauce tossed with fettuccine and parmesan cheese.</dd>
+        <dt>Chocolate Lava Cake <span class="price">Rs.750</span></dt>
+        <dd>Warm chocolate cake with a molten center served with vanilla ice cream.</dd>
+    </dl>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Modern Portfolio Header">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #111;
+            color: white;
+            padding: 15px 40px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .secondary-links {
+            display: flex;
+            gap: 15px;
+        }
+        .hero {
+            height: 90vh;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background-color: white;
+            color: #111;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* ================= MOBILE VIEW ================= */
+        @media (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondary-links {
+                display: none;
+                /* Hide secondary links */
+            }
+            .nav-links {
+                margin-top: 10px;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .logo {
+                text-align: center;
+                /* Center brand logo */
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <div class="secondary-links">
+                <a href="#" style="color:white;">Login</a>
+                <a href="#" style="color:white;">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Hello, I'm a Web Developer</h1>
+            <p>I design modern and responsive websites.</p>
+            <button>View My Work</button>
+        </div>
+    </section>
+</body>
+</html>

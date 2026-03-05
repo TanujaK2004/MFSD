@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Service Pricing Table">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Pricing Plans</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        /* Flex Container */
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Pricing Cards */
+        .pricing-card {
+            background: white;
+            padding: 30px 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card h2 {
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #4e73df;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4e73df;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #2e59d9;
+        }
+
+        /* Highlight Pro Plan */
+        .pro {
+            border: 2px solid #4e73df;
+            transform: scale(1.05);
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Our Service Plans</h1>
+
+<div class="pricing-container">
+
+    <!-- Basic Plan -->
+    <div class="pricing-card">
+        <h2>Basic</h2>
+        <p class="price">Rs.199/month</p>
+        <ul>
+            <li>5 Projects</li>
+            <li>Email Support</li>
+            <li>Basic Analytics</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="pricing-card pro">
+        <h2>Pro</h2>
+        <p class="price">Rs.499/month</p>
+        <ul>
+            <li>20 Projects</li>
+            <li>Priority Support</li>
+            <li>Advanced Analytics</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="pricing-card">
+        <h2>Premium</h2>
+        <p class="price">Rs.999/month</p>
+        <ul>
+            <li>Unlimited Projects</li>
+            <li>24/7 Support</li>
+            <li>Full Analytics</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    background-color: #f0f8ff; /* light blue background */
+    font-family: Arial, sans-serif; /* clean font */
+    text-align: center; /* center-align text */
+    color: #333333; /* dark gray text */
+}
+h1 {
+    color: #2e8b57; /* sea green heading */
+}
+h2 {
+    color: #4682b4; /* steel blue subheading */
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.italic {
+    font-style: italic;
+}
